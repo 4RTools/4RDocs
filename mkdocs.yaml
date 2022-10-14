@@ -1,0 +1,91 @@
+strict: false
+
+site_name: 4RTools
+site_url: "http://docs.4rtools.com.br/"
+site_description: 4RTools Documentation
+site_author: 4RTools Contributors
+repo_url: https://github.com/4RTools/4RTools
+
+theme:
+  name: material
+  logo: assets/logo-4rtools.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        pt: "Português (BR)"
+        en: "English"
+      default_language: 'pt'
+      no_translation:
+        pt: "Aquesta pàgina no està traduida al català."
+        en: "This page isn't translated to English."
+      translate_nav:
+        pt:
+          Home Section: "Sobre o 4R"
+          features section: "Fucionalidades"
+          Adding Server: "Adicionando um novo Servidor"
+          Skill Autobuff Section: "Habilidades"
+          Item Autobuff Section: "Itens"
+          FAQ: "Perguntas Frequentes"
+        en:
+          Home Section: "About 4R"
+          features section: "Features"
+          Skill Autobuff Section: "Skills"
+          Item Autobuff Section: "Stuffs"
+          Adding Server: "Adding a new Server"
+          FAQ: "FAQ"
+
+
+nav:
+- Home Section: index.md
+- Home Section: index.en.md
+- Adding Server: adding-server/adding-server.md
+- Adding Server: adding-server/adding-server.en.md
+- features section:
+  - Autopot: features/autopot/autopot.md
+  - Autopot: features/autopot/autopot.en.md
+  - Status Recovery: features/status-recovery/status-recovery.md
+  - Status Recovery: features/status-recovery/status-recovery.en.md
+  - Skill Spammer: features/skill-spammer/spammer.md
+  - Skill Spammer: features/skill-spammer/spammer.en.md
+  - Skill Timer: features/skill-timer/timer.md
+  - Skill Timer: features/skill-timer/timer.en.md
+  - Autobuff: features/autobuff/autobuff.md
+  - Autobuff: features/autobuff/autobuff.en.md
+  - Macro Songs: features/macro-songs/macro-songs.md
+  - Macro Songs: features/macro-songs/macro-songs.en.md
+  - ATK x DEF: features/atk-def/atk-def.md
+  - ATK x DEF: features/atk-def/atk-def.en.md
+  - Macro Switch: features/macro-switch/macro-switch.md
+  - Macro Switch: features/macro-switch/macro-switch.en.md
+  - Profiles: features/profiles/profiles.md
+  - Profiles: features/profiles/profiles.en.md
+
+- FAQ: FAQ/FAQ.md
+- FAQ: FAQ/FAQ.en.md
+
+
+extra:
+  version:
+    provider: mike
+  # Default mkdocs-material alternate links for untranslated pages
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
+  alternate:
+    - name: Português (BR)
+      link: ""
+      lang: pt
+
+    - name: English
+      link: index.en/
+      lang: en
+
