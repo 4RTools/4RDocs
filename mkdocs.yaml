@@ -45,6 +45,11 @@ plugins:
           Adding Server: "Adding a new Server"
           FAQ: "FAQ"
 
+markdown_extensions:
+  - toc:
+      permalink: True
+  - admonition
+  - attr_list
 
 nav:
 - Home Section: index.md
